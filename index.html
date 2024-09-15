@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="./image/logo-removebg-preview.png">
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(234 179 8);
+        border-radius: 20px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgb(69, 53, 5);
+      }
+      .sect {
+        width: 100vw;
+        height: 100vh;
+      }
+      .bg-cover {
+        background: linear-gradient(to right, 
+                  rgb(0 0 0 /0.9), 
+                  rgb(0 0 0 /0)),
+                    url("./image/mount.jpg");
+        background-size: cover;
+      }
+      .active-link {
+        color: rgb(234 179 8);
+      }
+      .custom-container {
+        max-width: 600px; /* Atur sesuai kebutuhan */
+        margin: 50px; /* Memusatkan elemen secara horizontal */
+        padding: 1rem; /* Atur padding sesuai kebutuhan */
+      }
+      .card {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .card.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .area {
+        width: 69px;
+        height: 69px;
+        background: linear-gradient(to bottom, #eab308,#d9c895);
+        border-radius: 34.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+      }
+      .rounded-fulll {
+        border-radius: 9999px;
+      }
+      .grad-a {
+        background: linear-gradient(to bottom, #eab308,#d9c895);
+      }
+      .grad-b {
+        background: linear-gradient(to bottom, #735703,);
+      }
+
+    </style>
+  </head>
+  <body class="bg-cover font-sans">
+    <nav class="bg-gray-900 p-4 shadow-2xl">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="text-white text-2xl font-bold">
+          <p>𝖶𝗈𝗇𝖽𝖾𝗋𝖿𝗎𝗅 𝖨𝗇𝖽𝗈𝗇𝖾𝗌𝗂𝖺</p>
+        </div>
+        <ul class="flex space-x-4">
+          <li>
+            <a
+              href="index.html"
+              class="text-yellow-500 px-3 py-2 rounded-md text-sm font-medium active-link"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-white hover:bg-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-white hover:bg-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="suggestions.html"
+              class="text-white hover:bg-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium"
+              >Suggestions</a
+            >
+          </li>
+        </ul>
+        <a
+          href="profile.html"
+          class="flex items-center text-white hover:bg-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium"
+        >
+          <i class="fas fa-user-circle text-xl"></i>
+        </a>
+      </div>
+    </nav>
+
+
+    <section class="sect py-4 px-4">
+      <!-- Main Content -->
+      <main class="custom-container mx-20 my-20 p-10">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-bold mb-4">𝑯𝒂𝒊, 𝑺𝒆𝒍𝒂𝒎𝒂𝒕 𝑫𝒂𝒕𝒂𝒏𝒈</h2>
+          <p class="text-lg mb-6">
+            Di sini, kami membagikan saran atau referensi untuk tempat wisata yang menarik untuk dikunjungi.
+          </p>
+          <button
+            class="bg-gradient-to-b grad-a text-black font-medium py-2 px-4 rounded-fulll hover: focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            Read More
+          </button>
+        </div>
+      </main>
+      <!-- Cards Section -->
+      <div class="flex flex-col items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="card bg-white p-6 rounded-lg shadow-lg text-center justify-center">
+            <div class="flex justify-center mb-4">
+              <div class="area">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" color="#000000" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 9.39815 13.8837 9.76913 13.6831 10.0808C13.0854 11.0097 12 11.8954 12 13V13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M11.992 17H12.001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mb-2">Card 1</h2>
+            <p class="text-gray-600">Ini adalah deskripsi untuk card 1.</p>
+          </div>
+    
+          <div class="card bg-white p-6 rounded-lg shadow-lg text-center justify-center">
+            <div class="flex justify-center mb-4">
+              <div class="area">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" color="#000000" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2C12 2 8 6 8 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                  <path d="M21 15H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21 9H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mb-2">Card 2</h2>
+            <p class="text-gray-600">Ini adalah deskripsi untuk card 2.</p>
+          </div>
+    
+          <div class="card bg-white p-6 rounded-lg shadow-lg text-center justify-center">
+            <div class="flex justify-center mb-4">
+              <div class="area">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" color="#000000" fill="none">
+                  <path d="M2 12.5C2 11.3954 2.89543 10.5 4 10.5C5.65685 10.5 7 11.8431 7 13.5V17.5C7 19.1569 5.65685 20.5 4 20.5C2.89543 20.5 2 19.6046 2 18.5V12.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15.4787 7.80626L15.2124 8.66634C14.9942 9.37111 14.8851 9.72349 14.969 10.0018C15.0369 10.2269 15.1859 10.421 15.389 10.5487C15.64 10.7065 16.0197 10.7065 16.7791 10.7065H17.1831C19.7532 10.7065 21.0382 10.7065 21.6452 11.4673C21.7145 11.5542 21.7762 11.6467 21.8296 11.7437C22.2965 12.5921 21.7657 13.7351 20.704 16.0211C19.7297 18.1189 19.2425 19.1678 18.338 19.7852C18.2505 19.8449 18.1605 19.9013 18.0683 19.9541C17.116 20.5 15.9362 20.5 13.5764 20.5H13.0646C10.2057 20.5 8.77628 20.5 7.88814 19.6395C7 18.7789 7 17.3939 7 14.6239V13.6503C7 12.1946 7 11.4668 7.25834 10.8006C7.51668 10.1344 8.01135 9.58664 9.00069 8.49112L13.0921 3.96056C13.1947 3.84694 13.246 3.79012 13.2913 3.75075C13.7135 3.38328 14.3652 3.42464 14.7344 3.84235C14.774 3.8871 14.8172 3.94991 14.9036 4.07554C15.0388 4.27205 15.1064 4.37031 15.1654 4.46765C15.6928 5.33913 15.8524 6.37436 15.6108 7.35715C15.5838 7.46692 15.5488 7.5801 15.4787 7.80626Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mb-2">Card 3</h2>
+            <p class="text-gray-600">Ini adalah deskripsi untuk card 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener('scroll', () => {
+        const cards = document.querySelectorAll('.card');
+        const triggerHeight = window.innerHeight * 0.55;
+    
+        cards.forEach(card => {
+          const cardTop = card.getBoundingClientRect().top;
+          if (cardTop < triggerHeight) {
+            card.classList.add('visible');
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

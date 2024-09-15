@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="../../dist/output.css" rel="stylesheet"> <!-- Pastikan path ini benar mengarah ke Tailwind CSS -->
+</head>
+<body class="bg-gradient-to-t from-slate-900 to-slate-700 flex items-center justify-center min-h-screen font-sans">
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Sign In</h2>
+    <form  id="signInForm" onsubmit="return handleSubmit()">
+      <!-- Username -->
+      <div class="mb-4">
+        <label for="username" class="block text-sm font-medium text-gray-700 text-center">Username :</label>
+        <input type="text" id="username" name="username" required placeholder="Masukan Username" autocomplete="off"
+          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-hgoldd sm:text-sm">
+      </div>
+
+      <!-- Password -->
+      <div class="mb-6">
+        <label for="password" class="block text-sm font-medium text-gray-700 text-center">Password :</label>
+        <input type="password" id="password" name="password" required placeholder="Masukan Password" autocomplete="off"
+          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-hgoldd sm:text-sm">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex items-center justify-between">
+        <button type="submit"
+          class="w-full py-2 px-4 bg-gradient-to-b from-hgoldd to-lgoldd text-white font-bold rounded-lg hover:from-mblue hover:to-lblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-hgoldd">
+          Sign In
+        </button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script>
+    function handleSubmit() {
+      window.location.href = 'index.html'; // Mengarahkan ke halaman index.html
+      return false; // Mencegah pengiriman form secara default
+    }
+  </script>
+</body>
+
+</html>
